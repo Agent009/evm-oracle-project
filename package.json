@@ -1,0 +1,28 @@
+{
+  "name": "oracle-project",
+  "version": "1.0.0",
+  "author": "Mohammad Amir <amir@connextar.com>",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "hh:accounts": "hardhat accounts",
+    "hh:clean": "hardhat clean",
+    "tellororacle:deploy": "ts-node -r tsconfig-paths/register --files ./scripts/CallOracle/Deploy.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5",
+    "usingtellor": "^5.0.5"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "@openzeppelin/contracts": "^5.1.0",
+    "hardhat": "^2.22.16",
+    "mocha": "^10.8.2",
+    "tsc-alias": "^1.8.10"
+  }
+}
